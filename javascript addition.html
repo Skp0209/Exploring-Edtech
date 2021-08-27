@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>javascript multiplication,divison,addition,subtraction</title>
+<style>
+.center{
+margin: auto;
+width: 60%;
+border: 7px solid #73AD21;
+padding: 90px;
+
+}
+.h2{
+width: 30%
+}
+</style>
+</head>
+<body>
+
+<script>
+function myfun()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a*b);
+}
+function myfun2()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a/b);
+}
+function myfun3()
+{
+var a=parseInt(document.getElementById('number').value);
+var b=parseInt(document.getElementById('numbers').value);
+document.getElementById('result').innerHTML=(a+b);
+}
+function myfun4()
+{
+var a=document.getElementById('number').value;
+var b=document.getElementById('numbers').value;
+document.getElementById('result').innerHTML=(a-b);
+}
+</script>
+<div class="center">
+<h2>javascript multiplication,divison,addition,subtraction</h2><br><br><br><br>
+1st number:
+<input type="number" value="" id="number"><br><br>
+2nd number:
+<input type="number" value="" id="numbers"><br><br>
+<input type="submit" value="multiply" onclick="return myfun()"><br><br>
+<input type="submit" value="divide" onclick="return myfun2()"><br><br>
+<input type="submit" value="plus" onclick="return myfun3()"><br><br>
+<input type="submit" value="minus" onclick="return myfun4()"><br><br>
+<b>The result is:</b><br><br>
+<span id="result"></span>
+</div>
+</body>
+</html>
